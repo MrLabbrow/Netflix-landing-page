@@ -12,7 +12,8 @@ body {
 
 .main {
   background-image: url(assets/images/bg.jpg);
-  height: 70vh;
+  /* height: 70vh; */
+  height: 644px;
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -20,7 +21,8 @@ body {
 }
 
 .main .box {
-  height: 70vh;
+  /* height: 70vh; */
+  height: 644px;
   width: 100%;
   opacity: 0.69;
   background-color: black;
@@ -142,26 +144,6 @@ nav button {
   color: white;
 }
 
-@media screen and (max-width: 1300px) {
-  /* body{
-      background-color: red;
-    } */
-
-  .first {
-    flex-wrap: wrap;
-  }
-
-  .secimg img {
-    width: 305px;
-    
-  }
-  
-  .secimg video {
-    width: 305px;
-
-  }
-}
-
 .secimg {
   position: relative;
 }
@@ -177,6 +159,47 @@ nav button {
   top: 105px;
   right: 0px;
   left: 74px;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  /* body{
+    background-color: red;
+  } */
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secimg img {
+    width: 305px;
+  }
+
+  .secimg video {
+    width: 244px;
+    left: 43px;
+    top: 72px;
+  }
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
 }
 
 section.first > div {
@@ -249,6 +272,11 @@ footer {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 29px;
+  }
+
+  footer {
+    max-width: 90vw;
   }
 }
 
